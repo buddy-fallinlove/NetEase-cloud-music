@@ -1,0 +1,99 @@
+<view>
+	<view>
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="rgb(149,149,149)" class="box">
+			<block wx:for="{{arr}}" wx:key="index">
+				<swiper-item>
+					<image src="{{item.pic}}" class="picture"></image>
+					<view>{{item.typeTitle}}</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<view class="center">
+		<view bindtap="click1">
+			<image src="../../images/tabbar/分类.png" class="icon1"></image>
+			<view class="word1">电台分类</view>
+		</view>
+		<view bindtap="click2">
+			<image src="../../images/tabbar/目录.png" class="icon1"></image>
+			<view class="word1">电台排行</view>
+		</view>
+		<view bindtap="click3">
+			<image src="../../images/tabbar/皇冠.png" class="icon1"></image>
+			<view class="word1">付费精品</view>
+		</view>
+		<view bindtap="click4">
+			<image src="../../images/tabbar/书.png" class="icon1"></image>
+			<view class="word1">主播学院</view>
+		</view>
+	</view>
+	<view class="below">
+		<view class="word2">电台推荐</view>
+		<van-button type="default" icon="replay">换一换</van-button>
+	</view>
+	<view class="box3">
+		<view wx:for="{{arr1}}" wx:key="index">
+			<view class="box2">
+				<image src="{{item.picUrl}}" class="picture1"></image>
+				<view class="word3">{{item.name}}</view>
+			</view>
+		</view>
+	</view>
+	<view class="below1">
+		<view class="below">
+			<view style="display:flex;align-items: center;">
+				<view class="word2">精品推荐</view>
+				<view class="word4">你值得拥有的优质内容</view>
+			</view>
+			<van-button type="default">全部精品</van-button>
+		</view>
+		<view class="box3">
+			<view wx:for="{{arr3}}" wx:key="index">
+				<view class="box2">
+					<image src="{{item.picUrl}}" class="picture1"></image>
+					<view class="word3">{{item.name}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="below">
+		<view class="word2">创作丨翻唱></view>
+		<van-button type="default" icon="play-circle-o">播放</van-button>
+	</view>
+	<view>
+		<view wx:for="{{arr2}}" wx:key="index" class="box1">
+			<image src="{{item.program.coverUrl}}" class="picture2"></image>
+			<view>
+				<view class="f-s12">{{item.program.name}}</view>
+				<view class="song">
+					<view class="name">{{item.program.dj.nickname}}</view>
+					<view class="Y-axis"></view>
+					<view class="name">{{item.score}}万</view>
+				</view>
+			</view>
+			<van-icon name="play-circle-o" />
+		</view>
+	</view>
+	<view class="below">
+		<view class="word2">热门分类</view>
+	</view>
+	<view class="down">
+		<view wx:for="{{arr4}}" wx:key="index">
+			<view class="button">
+				<image src="{{item.pic56x56Url}}" class="picture3"></image>
+				<view class="woresa">{{item.name}}</view>
+			</view>
+		</view>
+	</view>
+	<view class="below">
+		<view class="word2">更多分类</view>
+	</view>
+	<view class="down">
+		<view wx:for="{{arr5}}" wx:key="index">
+			<view class="button">
+				<image src="{{item.pic56x56Url}}" class="picture3"></image>
+				<view class="woresa">{{item.name}}</view>
+			</view>
+		</view>
+	</view>
+</view>

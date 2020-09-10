@@ -1,0 +1,11 @@
+<view class="big-box">
+<view class="bt1">推荐节目</view>
+<view class="bt2">更多节目</view>
+</view>
+<view class="big-box2">
+<view wx:for="{{recommend}}" wx:key="index" class="small-box" bindtap="recommend" data-item="{{item}}" data-index="{{index}}">
+<image class="beijing" src="{{item.coverUrl}}"></image>
+<view class="title">{{item.name}}</view>
+</view>
+</view>
+

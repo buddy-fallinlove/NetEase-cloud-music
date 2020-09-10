@@ -1,0 +1,143 @@
+<!-- 头部搜索栏 -->
+<view class="out-box">
+<view class="fath">
+<image class="tubiao" src="../../images/tabbar/放大镜.png"></image>
+<input class="inpu" placeholder="请输入搜索关键词" value="{{keywords}}">{{keywords}}</input>
+<view class="x" bindtap="chacha">x</view>
+</view>
+</view>
+<!-- 中间导航选项 -->
+<scroll-view scroll-x>
+<view class="nav-box">
+<view wx:for="{{nav}}" wx:key="index" bindtap="dianji" data-item="{{item}}" data-index="{{index}}">
+<view class="sm {{active===index? 'change':''}}">{{item.name}}</view>
+</view>
+</view>
+</scroll-view>
+
+
+
+<!-- 单曲列表 -->
+<view wx:if="{{active===0}}">
+<view>
+<view class="bf-all"><image  class="b-f-all" src="../../images/tabbar/播放.png"></image>播放全部</view>
+<view class="big-box" wx:for="{{list}}" wx:key="index" data-item="{{item}}" bindtap="bofang">
+<view class="ww">{{index+1}}</view>
+<view class="big-box-one">
+<view class="title">{{item.name}}</view>
+<view class="sm-title">
+<view wx:for="{{item.artists}}" wx:key="index" wx:for-item="item1" wx:for-index="index1">
+{{item1.name}}
+</view>
+
+<view>-{{item.album.name}}</view>
+</view>
+</view>
+
+<image class="bb" src="../../images/tabbar/播放.png"></image>
+</view>
+</view>
+
+
+</view>
+<!-- 专辑列表 -->
+<view wx:if="{{active===1}}">
+<view wx:for="{{list}}" wx:key="index" class="bgb" bindtap="zhuanji" data-item="{{item}}">
+<image class="bgi" src="{{item.picUrl}}"></image>
+<view class="sm-box">
+<view class="til">{{item.name}}</view>
+<view class="title">{{item.artist.name}}<text class="shijian">{{item.publishTime}}</text></view>
+</view>
+
+
+</view>
+
+
+
+
+</view>
+<!-- 歌手列表 -->
+<view wx:if="{{active===2}}">
+<view wx:for="{{list}}" wx:key="index" class="h-o-b" bindtap="geshou" data-item="{{item}}">
+<image class="b-g-t" src="{{item.img1v1Url}}"></image>
+<view class="g-s-m">{{item.name}}</view>
+</view>
+
+
+ </view>
+<!-- 歌单列表 -->
+<view wx:if="{{active===3}}">
+<view wx:for="{{list}}" wx:key="index"class="big-box2" bindtap="gedan" data-item="{{item}}">
+<image src="{{item.coverImgUrl}}" class="bg-tu2"></image>
+<view class="right-box">
+<view class="top-title">{{item.name}}</view>
+<view class="buttom-box">
+<view class="bt2">{{item.trackCount}}首音乐</view>
+<view class="bt2">{{item.creator.nickname}}</view>
+<view class="bt2">播放{{item.playCount}}次</view>
+</view>
+
+</view>
+
+
+</view>
+
+
+
+
+ </view>
+<!-- 用户列表 -->
+<view wx:if="{{active===4}}">
+<view wx:for="{{list}}" wx:key="index" class="big-box3" bindtap="yonghu" data-item="{{item}}">
+<image class="tu3" src="{{item.avatarUrl}}"></image>
+<view class="r-g-b">
+<view class="title3">{{item.nickname}}</view>
+<view class="sm-title3">{{item.signature}}</view>
+</view>
+<view class="guanzhu"> +关注</view>
+</view>
+
+
+
+
+
+ </view>
+<!-- 视频 -->
+<view wx:if="{{active===5}}">
+<view class="big-box4" wx:for="{{list}}" wx:key="index" bindtap="shipin" data-item="{{item}}">
+<view class="left-box">
+<image class="tu4" src="{{item.coverUrl}}"></image>
+<view class="count">{{playTime}}</view>
+</view>
+
+<view class="cen-box">
+<view class="mv">MV</view>
+<view class="time">{{item.durationms}}</view>
+</view>
+
+<view class="rig-box">
+<view class="right-title">{{item.title}}</view>
+<view class="by-singer">by{{item.creator[0].userName}}</view>
+</view>
+
+</view>
+
+
+
+</view>
+<!-- 电台列表 -->
+<view wx:if="{{active===6}}">
+<view class="big-box3" wx:for="{{list}}" wx:key="index" bindtap="diantai" data-item="{{item}}">
+<image class="bg-tu2" src="{{item.picUrl}}"></image>
+<view class="r-g-b">
+<view class="title3">{{item.name}}</view>
+<view class="sm-title3">{{item.dj.nickname}}</view>
+</view>
+
+</view>
+
+
+</view>
+
+
+

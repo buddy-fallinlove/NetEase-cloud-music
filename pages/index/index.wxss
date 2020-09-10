@@ -1,0 +1,18 @@
+.box{
+  font-size: 18px;
+  font-weight: 560;
+}
+.box1{
+  background: #ededed;
+  width: 444rpx;
+  height: 75rpx;
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.box2{
+  color: #999;
+  font-size: 14px;
+  margin-top: -4px;
+}

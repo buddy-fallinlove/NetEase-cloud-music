@@ -1,0 +1,16 @@
+<view class="obj">
+	<view class="obj1">音乐新势力</view>
+	<view></view>
+  	<view class="obj2" bindtap="gonewsong">新音乐</view>
+</view>
+<view class="box">
+	<view wx:for="{{arr3}}" wx:key="index"  bindtap="read" data-item="{{item}}">
+		<view>
+			<image src="{{item.picUrl}}" class="box1"></image>
+			<view>
+				<view class="box2">{{item.name}}</view>
+			</view>
+		</view>
+
+	</view>
+</view>

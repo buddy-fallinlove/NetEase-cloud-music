@@ -1,0 +1,33 @@
+
+.bt{
+  display: flex;
+}
+.bt1{
+  font-size: 44rpx;
+  font-weight: 700;
+  margin-left: 40rpx;
+}
+.bt2{
+  width: 44rpx;
+  height: 44rpx;
+  position: absolute;
+  left: 330rpx;
+  top: 35rpx;
+}
+.bt3{
+  text-align: center;
+  background-color: #ededed;
+  width: 60%;
+  height: 70rpx;
+  border-radius: 20rpx;
+  margin-left: 30rpx;
+}
+.bt4{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 30rpx;
+margin-top: 10rpx;
+}
+.bodyer{
+  margin-top: 20rpx;
+}

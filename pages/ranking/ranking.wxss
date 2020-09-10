@@ -1,0 +1,43 @@
+
+.picture1{
+  width: 230rpx;
+  height: 231rpx;
+  border-radius: 16rpx;
+}
+.box2{
+  width: 230rpx;
+  margin-bottom: 30rpx;
+}
+.word3{
+  color:rgba(43, 35, 41, 0.867) ;
+  font-size: 28rpx;
+}
+.box3{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 80rpx;
+  
+}
+.word1{
+  font-weight: 700;
+  font-size: 30rpx;
+  color: red;
+  margin: 20rpx;
+}
+.box1{
+  display: flex;
+  height: 190rpx;
+  margin: 61rpx;
+}
+.word2{
+  font-size: 28rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:rgba(60, 54, 60, 0.867) ;
+  width: 430rpx;
+  position: relative;
+  left: 20rpx;
+  top: 40rpx;
+}

@@ -1,0 +1,94 @@
+
+.box{
+  width: 100%;
+  font-size: 30rpx;
+  color: #000;
+  display: flex;
+  margin: 20rpx;
+}
+.xiaotu{
+  width:40rpx ;
+  height:40rpx ;
+}
+.lid{
+  background: rgb(233, 237, 237);
+  width: 100%;
+  display: flex;
+}
+.beijing{
+  width: 276rpx;
+  height: 276rpx;
+  padding: 20px;
+}
+.bt{
+  margin-top: 44rpx;
+}
+.bt1{
+  font-size: 13px;
+  color: rgb(45, 101, 244);
+}
+.bt2{
+  font-size: 10px;
+  color: red;
+  margin-top:15rpx ;
+}
+.bt3{
+  font-size: 13px;
+  text-overflow: ellipsis;
+  width:375rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgb(255, 209, 243);
+}
+.bt4{
+  font-size: 10px;
+  color: rgb(254, 90, 2);
+  width: 375rpx;
+  height: 200rpx;
+  margin-top:30rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.inas{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10px;
+}
+.box1 {
+  display: flex;
+  margin: 20rpx 0;
+  border-bottom: #ededed solid 1rpx;
+}
+.number{
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  font-size: 30rpx;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.sing {
+  font-size: 29rpx;
+  color: red;
+}
+.name {
+  color: rgb(200, 200, 200);
+  font-size: 26rpx;
+}
+.box2 {
+  width: 498rpx;
+}
+.picture2{
+  width: 50rpx;
+  height: 50rpx;
+}
+.xxx{
+font-size: 16px;
+color: #ededed;
+font-weight: 700;
+position: absolute;
+top:442rpx;
+left: 62rpx;
+}

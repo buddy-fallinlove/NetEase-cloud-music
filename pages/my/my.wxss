@@ -1,0 +1,63 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800rpx;
+}
+.word1{
+  font-size: 14px;
+
+}
+button:not([size='mini']){
+  margin-top: 30rpx;
+  width: 250rpx !important;
+  height: 70rpx;
+}
+.image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.account{
+  justify-content: space-around;
+}
+.account1{
+  color: rgb(184, 180, 180);
+  margin-top: 10rpx;
+}
+.account9{
+  width: 180rpx;
+  height: 50rpx;
+  background: rgb(194, 193, 193);
+  color: white;
+  border-radius: 25rpx;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.account2{
+  width: 180rpx;
+  height: 50rpx;
+  background: rgb(228, 14, 14);
+  color: white;
+  border-radius: 25rpx;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.image1{
+  width: 53rpx;
+  height: 40rpx;
+}
+.button{
+ display: flex;
+ justify-content: center;
+  margin-top: 300rpx;
+}
+.word1{
+  font-size: 14px;
+}

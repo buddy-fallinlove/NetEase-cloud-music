@@ -1,0 +1,262 @@
+.fath{
+  width: 100%;
+  height: 60rpx;
+  position: relative;
+  margin-top: 30rpx;
+}
+.x{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+background-color: #dedede;
+  position: absolute;
+right: 5%;
+top: 0rpx;
+text-align: center;
+line-height: 40rpx;
+}
+.tubiao{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+ top: 10rpx;
+left: 60rpx;
+
+}
+.inpu{
+
+  width: 80%;
+  height: 60rpx;
+margin-left: 5%;
+text-align: center;
+background-color: #f7f8fa;
+}
+.out-box{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #ededed;
+}
+.nav-box{
+  display: flex;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.sm{
+  width: 160rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+
+  font-size: 32rpx;
+}
+.change{
+  border-bottom: 2px solid red;
+}
+
+
+.big-box{
+  width: 100%;
+  display: flex;
+  height: 120rpx;
+  margin-top: 20rpx;
+}
+.ww{
+  color: #cecece;
+  line-height: 120rpx;
+  margin-left: 30rpx;
+}
+.big-box-one{
+  width: 90%;
+  margin-left: 30rpx;
+}
+.title{
+  font-size: 32rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.sm-title{
+font-size: 28rpx;
+color: #cecece;
+line-height: 40rpx;
+display: flex;
+}
+.bf-all{
+width: 100%;
+height:80rpx ;
+line-height: 80rpx;
+font-size: 32rpx;
+}
+.b-f-all{
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 30rpx;
+}
+.bb{
+  margin-right: 30rpx;
+   width: 50rpx;
+  height: 50rpx;
+   margin-top: 35rpx;
+  }
+  .bgb{
+    width: 100%;
+    height: 100rpx;
+    margin-top: 30rpx;
+    display: flex;
+  }
+  .bgi{
+    width: 100rpx;
+    height: 100rpx;
+    margin-left: 30rpx;
+  }
+  .sm-box{
+    margin-left: 30rpx;
+  }
+  .til{
+    color: skyblue;
+    font-size: 14px;
+    font-weight: 700;
+
+  }
+  .title{
+    font-size: 12px;
+color: #dedede;
+  }
+  .shijian{
+    margin-left: 30rpx;
+  }
+  .h-o-b{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  margin-top:30rpx;
+  }
+  .b-g-t{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+    margin-left: 30rpx;
+  }
+  .g-s-m{
+    font-size: 32rpx;
+    line-height: 100rpx;
+    margin-left: 30rpx;
+    color: skyblue;
+  }
+
+
+  .big-box2{
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    margin-top:30rpx;
+  }
+  .bg-tu2{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 15rpx;
+    margin-left: 30rpx;
+  }
+ .top-title{
+   font-size: 32rpx;
+   color: blueviolet;
+   margin-left: 30rpx;
+ }
+ .buttom-box{
+   display: flex;
+  
+   
+ }
+ .bt2{
+   font-size: 28rpx;
+   margin-left: 30rpx;
+ }
+ .title3{
+   font-size: 32rpx;
+line-height: 60rpx;
+ }
+ .sm-title3{
+  line-height: 40rpx;
+   font-size: 28rpx;
+   color: pink;
+ }
+ .guanzhu{
+   color: white;
+   background-color: red;
+   margin-right: 50rpx;
+   width: 120rpx;
+   height: 60rpx;
+   line-height:60rpx ;
+   text-align: center;
+   border-radius: 30rpx;
+   font-size: 32rpx;
+ }
+ .big-box3{
+   width: 100%;
+   
+   display: flex;
+   margin-top: 30rpx;
+ }
+ .tu3{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  margin-left: 30rpx;
+ }
+ .r-g-b{
+   width: 70%;
+   margin-left: 30rpx;
+ }
+ .big-box4{
+width: 100%;
+display: flex;
+margin-top: 30rpx;
+
+ }
+.left-box{
+  width: 150rpx;
+
+
+  margin-left: 30rpx;
+}
+.tu4{
+  width: 180rpx;
+  height: 130rpx;
+
+}
+.count{
+  color: white;
+
+
+  font-size: 28rpx;
+top: 10rpx;
+right: 10rpx;
+}
+.cen-box{
+   
+margin-left: 30rpx;
+  
+}
+.mv{
+  width: 70rpx;
+  border: 1px solid red;
+  margin-left: 30rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+.time{
+ 
+  font-size: 28rpx;
+  color: pink;
+  margin-left: 30rpx;
+}
+.rig-box{
+  margin-left: 30rpx;
+}
+.right-title{
+font-size: 32rpx;
+}
+.by-singer{
+  color: pink;
+  font-size: 28rpx;
+}

@@ -1,0 +1,20 @@
+<view>
+	<van-cell title="昵称" is-link value="{{nickname}}" bind:click="name"/>
+	<van-cell title="性别" is-link value="{{gender}}" bind:click="name1" />
+	<van-popup show="{{ show }}" position="bottom" custom-style="height: 40%;" bind:close="onClose">
+		<van-picker columns="{{ columns }}" show-toolbar="true" title="性别" default-index="{{ 0 }}" bind:change="onChange" bind:confirm="onconfirm" bind:cancel="oncancel" />
+	</van-popup>
+
+	<van-cell title="出生日期" is-link value="{{birthday}}" bind:click="name2" />
+	<van-popup show="{{ showday }}" position="bottom" custom-style="height: 40%;" bind:close="Close">
+		<van-datetime-picker type="date" value="{{ currentDate }}" bind:input="onInput" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:confirm="confirm" bind:cancel="cancel" />
+	</van-popup>
+	<van-cell title="城市" is-link value="保密" bind:click="name" />
+	<van-popup show="{{ showcity }}" position="bottom" custom-style="height: 40%;" bind:close="onClose">
+		<van-picker columns="{{ columns }}" show-toolbar="true" default-index="{{ 0 }}" bind:change="cityChange" bind:confirm="cityconfirm" bind:cancel="citycancel" />
+	</van-popup>
+	<van-cell title="签名" is-link value="{{signature}}" bind:click="name" />
+
+	<van-button type="warning" class="btn" bindtap="click">点击保存</van-button>
+
+</view>

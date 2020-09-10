@@ -1,0 +1,10 @@
+.btn1 {
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: space-around;
+}
+button:not([size='mini']){
+  width: 250rpx !important;
+  height: 70rpx;
+  font-weight: 500;
+}

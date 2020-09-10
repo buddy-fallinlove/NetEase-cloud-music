@@ -1,0 +1,52 @@
+.header{
+  display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #ededed;
+}
+.box{
+  font-size: 28rpx;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.change{
+  border-bottom: 2px solid red;
+}
+.smchange{
+  background-color: red;
+  color: white;
+}
+.bgb{
+  display: flex;
+  height: 60rpx;
+  justify-content: space-between;
+  margin-left: 80rpx;
+  margin-top: 30rpx;
+}
+.smb{
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+}
+
+
+.every{
+  height: 120rpx;
+  display: flex;
+  margin-top: 40rpx;
+}
+.tu{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  margin-left: 50rpx;
+}
+._name{
+  line-height: 120rpx;
+ font-size: 28rpx;
+  margin-left: 50rpx;
+}

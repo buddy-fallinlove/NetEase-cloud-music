@@ -1,0 +1,23 @@
+	<view class="center">
+		<view bindtap="click1">
+			<view class="word1">推荐</view>
+			<image src="../../images/tabbar/rili.png" class="icon1"></image>
+		</view>
+		<view bindtap="click2">
+			<view class="word1">歌单</view>
+			<image src="../../images/tabbar/yinyue1.png" class="icon1"></image>
+		</view>
+		<view bindtap="click3">
+			<view class="word1">排行</view>
+			<image src="../../images/tabbar/paihang.png" class="icon1"></image>
+		</view>
+		<view bindtap="click4">
+			<view class="word1">电台</view>
+			<image src="../../images/tabbar/leida.png" class="icon1"></image>
+		</view>
+		<view bindtap="click5">
+			<view class="word1">直播</view>
+			<image src="../../images/tabbar/shouyinji.png" class="icon1"></image>
+		</view>
+
+	</view>

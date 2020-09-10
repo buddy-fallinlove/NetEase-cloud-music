@@ -1,0 +1,49 @@
+
+<view>
+<view class="fath">
+<image class="tubiao" src="../../images/tabbar/放大镜.png"></image>
+<input class="inpu" placeholder="请输入搜索关键词" value="{{keywords}}" bindinput="search" bindconfirm="entersearch">{{keywords}}</input>
+<view class="quxiao" bindtap="quxiao" wx:if="{{keywords===''}}">取消</view>
+<view class="quxiao" bindtap="sousuo" wx:else>搜索</view>
+</view>
+
+</view>
+
+<!-- 搜索历史 -->
+<view wx:if="{{keywords===''}}">
+<view class="his" wx:if="{{historys.length!==0}}">
+<view class="box">
+<view class="title">搜索历史</view>
+<image class="shanchu" src="../../images/tabbar/垃圾桶.png" bindtap="del"></image>
+</view>
+<!-- 搜索的历史列表 -->
+<view class="big-hist">
+<view wx:for="{{historys}}" wx:key="index" class="hist" bindtap="lishi" data-item="{{item}}">
+{{item}}
+</view>
+</view>
+
+</view>
+
+
+
+<!-- 热搜榜 -->
+<view class="resou">
+<view class="rebt">热搜榜</view>
+<view wx:for="{{arr}}" wx:key="index" class="ch" bindtap="tolist" data-item="{{item}}">
+<view class="{{index<3? 'yanse':''}}">{{index+1}}</view>
+<view class="rsbbt">{{item.first}}</view>
+<view class="hot" wx:if="{{index<2}}">hot</view>
+</view>
+
+</view>
+</view>
+
+<view wx:else>
+<view class="ss">搜索"{{keywords}}"</view>
+<view wx:for="{{arr1}}" wx:key="index" class="liebiao" bindtap="click" data-item="{{item}}">
+<image class="fangda" src="../../images/tabbar/放大镜.png"></image>
+<view class="titles">{{item.name}}</view>
+</view>
+
+</view>

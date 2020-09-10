@@ -1,0 +1,36 @@
+.box1 {
+  display: flex;
+  
+}
+.box{
+  display: flex;
+  justify-content: center;
+  margin: 40rpx;
+}
+.picture1{
+  width: 230rpx;
+  height: 230rpx;
+  border-radius: 16rpx;
+}
+.box2{
+  width: 230rpx;
+  margin-bottom: 30rpx;
+}
+.word3{
+  font-weight: 700;
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color:rgba(233, 207, 233, 0.867);
+}
+.box3{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.picture {
+  width: 700rpx;
+  height: 350rpx;
+}

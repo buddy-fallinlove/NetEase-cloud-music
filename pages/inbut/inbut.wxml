@@ -1,0 +1,46 @@
+<view class="content">
+	<view class="content_c">
+		<view>
+			<view class="top">
+				<van-search placeholder="{{default.showKeyword}}" value="{{value}}" class="ipt" show-action bind:search="onSearch" bind:cancel="onCancel"
+        bind:change="change" />
+			</view>
+		</view>
+		<!-- 历史记录 -->
+		<view wx:if="{{flag===0}}">
+			<view class="top_d">
+				<view class="top_e">历史记录</view>
+				<view class="top_f">
+					<image src="../../images/tabbar/delete.png" bindtap="history"></image>
+				</view>
+			</view>
+			<view class="top_g">
+			<view wx:for="{{keywords}}" wx:key="index" bindtap="cisa" data-item="{{item}}">
+      <view>{{item}}</view>
+      </view>
+			</view>
+			<!-- 热搜榜 -->
+			<view class="top_d">
+				<view class="top_e">热搜榜</view>
+			</view>
+			<!-- 榜单 -->
+			<view class="top_h" wx:for="{{arr}}" wx:key="index" bindtap="fgd" data-item="{{item}}">
+				<view class="top_i {{index < 3 ? 'active' : ''}}">{{index + 1}}</view>
+				<view class="top_j">
+					<view class="top_k">{{item.searchWord}}
+						<text wx:if="{{item.iconType == 1}}">HOT</text>
+					</view>
+					<view class="top_l">{{item.content}}</view>
+				</view>
+				<view class="top_m">已有{{item.score}}人收藏</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 搜索出来的数据 -->
+<view wx:if="{{flag === 1}}">
+	<view class="pan">你搜索的是"{{value}}"</view>
+	<view wx:for="{{app}}" wx:key="index" bindtap="sert" data-item="{{item}}">
+		<view class="pang">{{item.keyword}}</view>
+	</view>
+</view>

@@ -1,0 +1,11 @@
+<view class="big-box">
+<view class="bt1">音乐新势力</view>
+<view class="bt2">新音乐</view>
+</view>
+<view class="big-box2">
+<view wx:for="{{newsong}}" wx:key="index" class="small-box" bindtap="newsong" data-item="{{item}}" data-index="{{index}}">
+<image class="beijing" src="{{item.picUrl}}"></image>
+<view class="title">{{item.name}}</view>
+</view>
+</view>
+

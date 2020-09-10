@@ -1,0 +1,16 @@
+<!-- 歌手信息 -->
+<view class="lid">
+<image src="{{arr.img1v1Url}}" class="box"></image>
+<view class="ert">{{arr.name}}</view>
+</view>
+<!-- 歌单 -->
+<view class="sda">
+<view wx:for="{{songs}}" wx:key="index" class="box1" bindtap="read" data-item="{{item}}">
+<view class="number">{{index+1}}</view>
+<view class="box2">
+<view class="sing">{{item.name}}</view>
+<view class="name">{{item.ar[0].name}} - {{item.al.name}}</view>
+</view>
+<image src="../../images/tabbar/播放.png" class="picture2"></image>
+</view>
+</view>

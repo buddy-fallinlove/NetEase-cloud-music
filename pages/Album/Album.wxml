@@ -1,0 +1,108 @@
+<view wx:if="{{type==='10'}}">
+<!-- 歌手信息 -->
+	<view class="lid">
+		<image class="beijing" src="{{album.picUrl}}"></image>
+		<view class="bt">
+			<view class="bt1">专辑：{{album.name}}</view>
+			<view class="bt2">歌手：{{album.company}}</view>
+			<view class="bt3">发行时间:{{album.publishTime}}</view>
+			<view class="bt4">简介：{{album.description}}</view>
+		</view>
+	</view>
+</view>
+<!--  歌手-->
+<view wx:if="{{type==='100'}}">
+	<view class="lid">
+		<image class="beijing" src="{{album.picUrl}}"></image>
+		<view class="bt">
+			<view class="bt2">歌手：{{album.name}}</view>
+			<view class="bt3">发行时间:{{album.publishTime}}</view>
+			<view class="bt4">简介：{{album.briefDesc}}</view>
+		</view>
+	</view>
+</view>
+<!--歌单-->
+<view wx:if="{{type==='1000'}}">
+	<view class="lid">
+		<image class="beijing" src="{{album.coverImgUrl}}"></image>
+		<view class="bt">
+			<view class="bt1">专辑：{{album.name}}</view>
+			<view class="bt3">更新时间:{{album.updateTime}}</view>
+			<view class="bt4">简介：{{album.description}}</view>
+		</view>
+	</view>
+</view>
+<!-- 用户 -->
+<view wx:if="{{type==='1002'}}">
+	<view class="lid">
+		<image class="beijing" src="{{album.backgroundUrl}}"></image>
+		<view class="bt">
+			<view class="bt1">{{album.nickname}}</view>
+				<view class="bt2">我已关注:{{album.follows}}</view>
+				<view class="bt3">粉丝：{{album.followeds}}</view>
+				<view class="bt2">{{album.birthday}}</view>
+		</view>
+	</view>
+	<view class="box">
+				<image src="../../images/tabbar/播放.png" class="xiaotu"></image>
+				<view>播放全部 （共{{arr.length}}首）</view>
+			</view>
+      <!-- 音乐 -->
+	<view wx:for="{{arr}}" wx:key="index" class="box1">
+		<view class="number">{{index+1}}</view>
+		<image class="inas" src="{{item.coverImgUrl}}"></image>
+		<view class="box2">
+			<view class="sing">{{item.name}}</view>
+			<view class="name">{{item.trackCount}}首    播放{{item.playCount}}</view>
+		</view>
+		<image class="picture2" src="../../images/tabbar/播放.png"></image>
+	</view>
+</view>
+<!--视频-->
+<view wx:if="{{type==='1014'}}">
+	<view>无结果</view>
+</view>
+<!-- 电台 -->
+<view wx:if="{{type==='1009'}}">
+	<view class="c-r">
+		<image src="{{album.picUrl}}"></image>
+  <view class="xxx">作者：{{album.name}}</view>
+	</view>
+	<view wx:for="{{arr}}" wx:key="index" class="box1" bindtap="read" data-item="{{item}}">
+		<view class="number">{{index+1}}</view>
+		<view class="box2">
+			<view class="sing">{{item.name}}</view>
+			<view class="d-f j-c-s-b">
+				<view class="bt2">发布{{item.createTime}}时间</view>
+				<view class="bt2">{{item.listenerCount}}收藏</view>
+				<view class="bt2">{{item.duration}}次</view>
+			</view>
+		</view>
+		<image class="picture2" src="../../images/tabbar/播放.png"></image>
+	</view>
+
+
+
+</view>
+
+
+<!--歌 -->
+<view wx:if="{{type!=='1002'&&type!=='1014'&&type!=='1009'}}">
+	<view class="box">
+				<image src="../../images/tabbar/播放.png" class="xiaotu"></image>
+				<view>播放全部（共{{arr.length}}首）</view>
+			</view>
+	<view wx:for="{{arr}}" wx:key="index"  class="box1" bindtap="read" data-item="{{item}}">
+		<view class="number">{{index+1}}</view>
+		<view class="box2">
+			<view class="sing">{{item.name}}</view>
+			<view class="d-f">
+				<view wx:for="{{item.ar}}" wx:key="index" wx:for-item="item1" wx:for-index="index1" class="bt3">
+        {{item1.name}}
+        </view>
+				<view class="bt3">-{{item.al.name}}</view>
+			</view>
+		</view>
+		<image class="picture2" src="../../images/tabbar/播放.png"></image>
+	</view>
+</view>

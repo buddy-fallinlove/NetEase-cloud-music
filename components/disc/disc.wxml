@@ -1,0 +1,35 @@
+<view class="obj">
+	<view class="obj1">
+		<view class="{{flag === 1?'active':''}}" bindtap="goBack">新碟</view>
+		<view class="{{flag === 0?'active':''}}" bindtap="go">新歌</view>
+	</view>
+
+</view>
+<view wx:if="{{flag===1}}">
+	<view class="obj2">更多新碟</view>
+	<view class="box">
+		<view wx:for="{{arr2}}" wx:key="index" bindtap="songer" data-item="{{item}}">
+			<view>
+				<image src="{{item.picUrl}}" class="box1"></image>
+				<view>
+					<view class="box2">{{item.name}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+</view>
+<view wx:else>
+	<view class="obj2" bindtap="gonewsong">更多新歌</view>
+<view class="box">
+	<view wx:for="{{arr1}}" wx:key="index"  bindtap="read" data-item="{{item}}">
+		<view>
+			<image src="{{item.picUrl}}" class="box1"></image>
+			<view>
+				<view class="box2">{{item.name}}</view>
+			</view>
+		</view>
+
+	</view></view>
+
+</view>

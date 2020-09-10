@@ -1,0 +1,21 @@
+.lunbotu{
+  width: 90%;
+  margin: auto;
+  margin-top: 30rpx;
+
+
+
+}
+.slide{
+  height: 340rpx !important;
+
+ 
+
+}
+.slide-image{
+  
+  width: 100%;
+  height: 340rpx !important;
+  border-radius: 15px 15px 15px 15px;
+
+}

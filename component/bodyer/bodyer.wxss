@@ -1,0 +1,15 @@
+.big-box{
+  display: flex;
+  margin-top: 30rpx;
+}
+.smbox{
+  width: 130rpx;
+  height: 130rpx;
+font-size: 12px;
+margin-left: 30rpx;
+}
+.tu{
+  width: 60rpx;
+  height: 60rpx;
+  margin: auto;
+}

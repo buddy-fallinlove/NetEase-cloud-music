@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "nav":"../../component/nav/nav",
+    "lunbo":"../../component/lunbo/lunbo",
+    "bodyer":"../../component/bodyer/bodyer",
+    "playlist":"../../component/playlist/playlist",
+    "newdisc":"../../component/newdisc/newdisc",
+    "newsong":"../../component/newsong/newsong",
+    "djprogram":"../../component/djprogram/djprogram",
+    "recommend":"../../component/recommend/recommend"
+
+  }
+  
+  
+}

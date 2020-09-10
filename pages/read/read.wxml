@@ -1,0 +1,57 @@
+<view class="wai">
+	<view class="top" style="  background: url({{song.al.picUrl}});">
+		<view class="top_a">
+			<view class="top_b">{{song.al.name}}</view>
+			<view class="top_c" bindtap="gostar">{{song.ar[0].name}}>></view>
+			<!-- 版心 -->
+			<view class="banxin" wx:if="{{words == 0}}">
+				<!-- 圆圈 -->
+				<view class="top_d" bindtap="goword">
+					<image class="top_e" src="../../images/song.png"></image>
+					<view class="top_f">
+						<image class="top_g" src="{{song.al.picUrl}}"></image>
+					</view>
+				</view>
+				<!-- 选项 -->
+				<view class="top_h">
+					<image src="../../images/yiqiting.png"></image>
+					<image src="../../images/xaizai.png"></image>
+					<image src="../../images/shejilingsheng.png"></image>
+					<image src="../../images/gequpinglun.png" bindtap="gocomment"></image>
+					<image src="../../images/mores.png"></image>
+				</view>
+			</view>
+			<!-- 歌词 -->
+			<view class="words" wx:if="{{words == 1}}" bindtap="noword">
+				<scroll-view scroll-y="true" style="height: 750rpx;" scroll-with-animation="true" scroll-top="{{scrollTop}}">
+					<view class="{{currentIndex === index?'cc':''}}" id="demo1" wx:for="{{lyricArray}}" wx:key="index">
+						{{item[1]}}
+					</view>
+				</scroll-view>
+			</view>
+			<!--进度条  -->
+			<view class="progress">
+				<!-- 当前播放时间 -->
+				<view>{{playtime}}</view>
+				<!-- 进度 -->
+				<view class="progress_a">
+					<slider value="{{move}}" max="{{max}}" activeColor="#C20C0C" block-size="12" bindchange="drag" />
+				</view>
+				<!-- 歌曲总时长 -->
+				<view>{{endtime}}</view>
+			</view>
+			<!--播放器  -->
+			<view class="top_j">
+				<image wx:if="{{num == 0}}" src="../../images/liebiaoxunhuan.png" bindtap="suiji"></image>
+				<image wx:if="{{num == 1}}" src="../../images/suiji.png" bindtap="one"></image>
+				<image wx:if="{{num == 2}}" src="../../images/one.png" bindtap="heart"></image>
+				<image wx:if="{{num == 3}}" src="../../images/heart.png" bindtap="xunhuan"></image>
+				<image src="../../images/shangyiqu.png" bindtap="last"></image>
+				<image class="play" src="../../images/playsong.png" wx:if="{{flag == 0}}" bindtap="stop"></image>
+				<image class="play" src="../../images/stop.png" wx:if="{{flag == 1}}" bindtap="playmusic"></image>
+				<image src="../../images/xiayiqu.png" bindtap="next"></image>
+				<image src="../../images/songlist.png"></image>
+			</view>
+		</view>
+	</view>
+</view>

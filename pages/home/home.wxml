@@ -1,0 +1,11 @@
+<view>
+<nav></nav>
+<lunbo  indicatorDots="{{indicatorDots}}" imageUrl="{{imageUrl}}" autoplay="{{autoplay}}" interval="{{interval}}" ></lunbo>
+<bodyer></bodyer>
+
+<playlist personalized="{{personalized}}"></playlist>
+<newdisc albums="{{albums}}" newest="{{newest}}"></newdisc>
+<newsong newsong="{{newsong}}"></newsong>
+<djprogram djprogram="{{djprogram}}"></djprogram>
+<recommend recommend="{{recommend}}"></recommend>
+</view>

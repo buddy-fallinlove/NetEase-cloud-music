@@ -1,0 +1,12 @@
+.pick{
+  height: 100rpx;
+}
+button:not([size='mini']){
+  margin-top: 100rpx;
+  width: 250rpx !important;
+  height: 70rpx;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+}

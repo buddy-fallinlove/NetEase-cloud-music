@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "rotation":"../../components/rotation/rotation",
+    "ification":"../../components/ification/ification",
+    "recommendation":"../../components/recommendation/recommendation",
+    "disc":"../../components/disc/disc",
+    "song":"../../components/song/song",
+    "station":"../../components/station/station",
+    "program":"../../components/program/program"
+  }
+}

@@ -1,0 +1,13 @@
+.rotationChart {
+  text-align: center;
+  padding: 20rpx;
+}
+.swiper,
+.swiper-item {
+    height: 280rpx ! important;
+}
+.swiper-image {
+  width: 95%;
+  height: 280rpx ! important;
+  border-radius: 20rpx 20rpx;
+}

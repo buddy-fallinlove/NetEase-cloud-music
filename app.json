@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/book/book",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/inbut/inbut",
+    "pages/put/put",
+    "pages/listforsong/listforsong",
+    "pages/ranking/ranking",
+    "pages/radio/radio",
+    "pages/liveing/liveing",
+    "pages/Unknown/Unknown",
+    "pages/junchai/junchai",
+    "pages/newsong/newsong",
+    "pages/singersong/singersong",
+    "pages/single/single",
+    "pages/Album/Album",
+    "pages/read/read"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E40000",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#cb1c37",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/首页.png",
+        "selectedIconPath": "images/tabbar/首页 (1).png"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "歌手",
+        "iconPath": "images/tabbar/erji.png",
+        "selectedIconPath": "images/tabbar/erji1.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "我 的",
+        "iconPath": "images/tabbar/我 的.png",
+        "selectedIconPath": "images/tabbar/我 的 (1).png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": ["audio", "location"]
+}

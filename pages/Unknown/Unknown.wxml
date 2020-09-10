@@ -1,0 +1,17 @@
+<view>
+	<image src="{{arr.coverImgUrl}}" class="picture1"></image>
+	<view class="box1">
+		<van-button type="default" icon="play-circle-">播放全部（共{{arr.tracks.length}}首）</van-button>
+		<van-button type="danger">+收藏({{arr.subscribedCount}})</van-button>
+	</view>
+	<view wx:for="{{arr.tracks}}" wx:key="index"  bindtap="read" data-item="{{item}}">
+		<view class="box2">
+			<view class="word1">{{index+1}}</view>
+			<view>
+				<view class="title">{{item.name}} {{item.alia[0]}}</view>
+				<view class="word2">{{item.ar[0].name}} - {{item.name}}</view>
+			</view>
+			<van-icon name="play-circle-o" class="icon" />
+		</view>
+	</view>
+</view>

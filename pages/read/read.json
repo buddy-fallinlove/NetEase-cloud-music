@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "van-slider": "../../lib/vant/slider/index"
+  }
+}

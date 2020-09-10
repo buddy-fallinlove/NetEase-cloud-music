@@ -1,0 +1,10 @@
+<view class="big-box">
+<view class="bt1">推荐歌单</view>
+<view class="bt2">歌单广场</view>
+</view>
+<view class="big-box2">
+<view wx:for="{{personalized}}" wx:key="index" class="small-box" bindtap="playlist" data-item="{{item}}" data-index="{{index}}">
+<image class="beijing" src="{{item.picUrl}}"></image>
+<view class="title">{{item.name}}</view>
+</view>
+</view>

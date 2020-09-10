@@ -1,0 +1,98 @@
+.allsong{
+  font-size: 32rpx;
+  min-height: 500rpx;
+}
+.song{
+  position: relative;
+  height: 380rpx;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.song_a{
+  height: 380rpx;
+  width: 100%;
+  object-fit: cover;
+}
+.song_b{
+  position: absolute;
+  bottom: 70rpx;
+  left: 3%;
+  color: white;
+}
+.song_c{
+  font-weight: bold;
+  font-size: 34rpx;
+}
+.song_d{
+  font-size: 28rpx;
+}
+.slist{
+  margin-top: -40rpx;
+  background-color: white;
+  width: 100%;
+  min-height: 200rpx;
+  border-top-left-radius: 36rpx;
+  border-top-right-radius: 36rpx;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+.slist_a{
+  width: 94%;
+  padding-top: 30rpx;
+}
+.slist_b{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.slist_c{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.slist_b text{
+  color: #666666;
+  margin-left: 10rpx;
+}
+.slist_f{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.slist_d{
+  display: flex;
+  align-items: center;
+}
+.slist_e{
+  display: flex;
+  align-items: center;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.list_a{
+  display: flex;
+  align-items: center;
+}
+.list_b{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+  margin-right: 15rpx;
+}
+.list_c{
+  color: #666666;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.list_e{
+  width: 30rpx;
+  height: 36rpx;
+}

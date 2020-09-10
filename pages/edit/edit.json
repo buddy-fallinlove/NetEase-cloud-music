@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-field": "../../lib/vant/field",
+    "van-popup": "../../lib/vant/popup",
+    "van-dialog": "../../lib/vant/dialog",
+    "van-cell": "../../lib/vant/cell",
+    "van-picker": "../../lib/vant/picker",
+    "van-datetime-picker": "../../lib/vant/datetime-picker",
+    "van-area": "../../lib/vant/area",
+    "van-button": "../../lib/vant/button"
+
+  }
+}

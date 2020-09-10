@@ -1,0 +1,110 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ipt {
+  width: 650rpx;
+}
+button:not([size='mini']){
+  width: 145rpx !important;
+  height: 70rpx;
+  margin-top: -40rpx;
+}
+button {
+font-weight: 500 !important;
+}
+.top_b{
+  width: 88%;
+  text-align: center;
+  height: 60rpx;
+}
+.top_b input{
+  height: 100%;
+  width: 100%;
+  background-color: #eeeeee;
+  border-radius:30rpx;
+}
+.top_c image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.top_d{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.top_e{
+  font-weight: bold;
+}
+.top_f image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.top_g{
+  display: flex;
+  flex-wrap: wrap;
+}
+.top_g view{
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 24rpx;
+  background-color: #eeeeee;
+  padding: 0 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+}
+.top_h{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40rpx;
+}
+.top_i{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  color:#666666;
+  font-weight: bold;
+  margin-top: 34rpx;
+}
+.active{
+  color:#C20C0C;
+}
+.top_j{
+  width: 80%;
+}
+.top_k{
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.top_k text{
+  color:#C20C0C;
+  font-style: oblique;
+  margin-left: 20rpx;
+}
+.top_l{
+  color: #666666;
+  margin-top: 20rpx;
+}
+.top_m{
+  color: #777777;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  font-size: 32rpx;
+}
+.content_c{
+  width: 94%;
+}
+.pan {
+  padding: 10rpx 30rpx;
+  color: rgb(232, 23, 8);
+  border-bottom: 1rpx solid #eee;
+}
+.pang {
+  padding: 30rpx 30rpx;
+  border-bottom: 1rpx solid #eee;
+}

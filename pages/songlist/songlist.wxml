@@ -1,0 +1,30 @@
+
+<view class="fa">
+
+<image class="beijing" src="{{picUrl}}"></image>
+<view class="btt">{{listname}}</view>
+</view>
+<!-- 播放，收藏 -->
+<view class="xz">
+<view class="allbf"><image class="bf" src="../../images/tabbar/播放.png"></image>播放全部（共{{songs.length}}首）</view>
+<view class="sc">＋收藏（{{subscribedCount}}）</view>
+</view>
+
+<!-- 歌曲列表 -->
+<view>
+<view class="big-box" wx:for="{{songs}}" wx:key="index" data-item="{{item}}" bindtap="bofang">
+<view class="ww">{{index+1}}</view>
+<view class="big-box-one">
+<view class="title">{{item.name}}</view>
+<view class="sm-title">
+<view wx:for="{{item.ar}}" wx:key="index" wx:for-item="item1" wx:for-index="index1">
+{{item1.name}}
+</view>
+
+<view>-{{item.al.name}}</view>
+</view>
+</view>
+
+<image class="bb" src="../../images/tabbar/播放.png"></image>
+</view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-search": "../../lib/vant/search",
+    "van-icon": "../../lib/vant/icon"
+  }
+}

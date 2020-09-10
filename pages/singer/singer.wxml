@@ -1,0 +1,28 @@
+<!-- 顶部导航 -->
+<scroll-view scroll-x>
+<view class="header"> 
+<view  wx:for="{{singerlist}}" wx:key="index" data-item="{{item}}" data-index="{{index}}"
+bindtap="dianji1">
+<view class="box {{active===index ? 'change':''}}">{{item.name}}</view>
+</view>
+</view>
+</scroll-view>
+<!-- 姓名首字母搜搜索 -->
+<scroll-view scroll-x>
+<view class="bgb" wx:if="{{flag===true}}">
+<view class="smb {{num===index ? 'smchange': ''}}" wx:for="{{zimu}}" wx:key="index" data-item="{{item}}" 
+data-index="{{index}}" bindtap="dianji2">
+<view>{{item.name}}</view>
+</view>
+</view>
+</scroll-view>
+
+
+<!-- 歌手列表 -->
+<view>
+<view class="every" wx:for="{{list}}" wx:key="index" data-item="{{item}}"
+bindtap="song">
+<image class="tu" src="{{item.picUrl}}"></image>
+<view class="_name">{{item.name}}</view>
+</view>
+</view>

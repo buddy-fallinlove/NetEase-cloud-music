@@ -1,0 +1,36 @@
+<view>
+	<view class="word1">榜单推荐</view>
+	<view class="box3">
+		<view wx:for="{{arr1}}" wx:key="index">
+			<view class="box2">
+				<image src="{{item.coverImgUrl}}" class="picture1"></image>
+				<view class="word3">{{item.name}}</view>
+			</view>
+		</view>
+	</view>
+	<view class="word1">官方榜</view>
+	<view class="box">
+		<view wx:for="{{arr}}" wx:key="index">
+			<view class="box1">
+				<image src="{{item.coverImgUrl}}" class="picture1"></image>
+				<view class="word2">
+					<view>1.{{item.tracks[0].first}} - {{item.tracks[0].second}}</view>
+					<view>2.{{item.tracks[1].first}} - {{item.tracks[1].second}}</view>
+					<view>3.{{item.tracks[2].first}} - {{item.tracks[2].second}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 全部 -->
+		<view class="word1">榜单推荐</view>
+	<view class="box3">
+		<view wx:for="{{arr3}}" wx:key="index">
+			<view class="box2">
+				<image src="{{item.coverImgUrl}}" class="picture1"></image>
+				<view class="word3">{{item.name}}</view>
+			</view>
+		</view>
+	</view>
+	<view>
+	</view>
+</view>

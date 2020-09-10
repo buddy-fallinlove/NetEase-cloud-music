@@ -1,0 +1,222 @@
+<van-tabs bind:change="onChange">
+	<van-tab title="推荐">
+		<view class="allsong">
+			<!-- 顶部图片 -->
+			<view class="song">
+				<image class="song_a" src="../../images/tabbar/tuijain.png"></image>
+				<view class="song_b">
+					<view class="song_c">推荐</view>
+					<view class="song_d">Recommend</view>
+				</view>
+			</view>
+			<!-- 歌曲列表 -->
+			<view class="slist">
+				<view class="slist_a">
+					<!--  -->
+					<view class="slist_b">
+						<view class="slist_d">
+							<image class="slist_c" src="../../images/tabbar/play.png"></image>
+							播放全部
+							<text>({{arr1.length}})</text>
+						</view>
+						<view class="slist_e">
+							<image class="slist_f" src="../../images/tabbar/list.png"></image>
+							多选
+						</view>
+					</view>
+					<!-- 歌曲 -->
+					<view class="list" wx:for="{{arr1}}" :key="index">
+						<view class="list_a">
+							<view>
+								<image class="list_b" src="{{item.album.blurPicUrl}}"></image>
+							</view>
+							<view>
+								<view>{{item.name}}</view>
+								<view class="list_c">{{item.artists[0].name}}</view>
+							</view>
+						</view>
+						<view class="list_d">
+							<image class="list_e" src="../../images/tabbar/more.png"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</van-tab>
+	<van-tab title="华语">
+		<view class="allsong">
+			<!-- 顶部图片 -->
+			<view class="song">
+				<image class="song_a" src="../../images/tabbar/huayu.jpg"></image>
+				<view class="song_b">
+					<view class="song_c">华语</view>
+					<view class="song_d">Mandarin Music</view>
+				</view>
+			</view>
+			<!-- 歌曲列表 -->
+			<view class="slist">
+				<view class="slist_a">
+					<!--  -->
+					<view class="slist_b">
+						<view class="slist_d">
+							<image class="slist_c" src="../../images/tabbar/play.png"></image>
+							播放全部
+							<text>({{arr2.length}})</text>
+						</view>
+						<view class="slist_e">
+							<image class="slist_f" src="../../images/tabbar/list.png"></image>
+							多选
+						</view>
+					</view>
+					<!-- 歌曲 -->
+					<view class="list" wx:for="{{arr2}}" :key="index">
+						<view class="list_a">
+							<view>
+								<image class="list_b" src="{{item.album.blurPicUrl}}"></image>
+							</view>
+							<view>
+								<view>{{item.name}}</view>
+								<view class="list_c">{{item.artists[0].name}}</view>
+							</view>
+						</view>
+						<view class="list_d">
+							<image class="list_e" src="../../images/tabbar/more.png"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</van-tab>
+	<van-tab title="欧美">
+    <view class="allsong">
+			<!-- 顶部图片 -->
+			<view class="song">
+				<image class="song_a" src="../../images/tabbar/oumei.jpg"></image>
+				<view class="song_b">
+					<view class="song_c">欧美</view>
+					<view class="song_d">Western Music</view>
+				</view>
+			</view>
+			<!-- 歌曲列表 -->
+			<view class="slist">
+				<view class="slist_a">
+					<!--  -->
+					<view class="slist_b">
+						<view class="slist_d">
+							<image class="slist_c" src="../../images/tabbar/play.png"></image>
+							播放全部
+							<text>({{arr3.length}})</text>
+						</view>
+						<view class="slist_e">
+							<image class="slist_f" src="../../images/tabbar/list.png"></image>
+							多选
+						</view>
+					</view>
+					<!-- 歌曲 -->
+					<view class="list" wx:for="{{arr3}}" :key="index">
+						<view class="list_a">
+							<view>
+								<image class="list_b" src="{{item.album.blurPicUrl}}"></image>
+							</view>
+							<view>
+								<view>{{item.name}}</view>
+								<view class="list_c">{{item.artists[0].name}}</view>
+							</view>
+						</view>
+						<view class="list_d">
+							<image class="list_e" src="../../images/tabbar/more.png"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+  </van-tab>
+	<van-tab title="韩国">
+    <view class="allsong">
+			<!-- 顶部图片 -->
+			<view class="song">
+				<image class="song_a" src="../../images/tabbar/hanguo.jpg"></image>
+				<view class="song_b">
+					<view class="song_c">韩国</view>
+					<view class="song_d">Korean Music</view>
+				</view>
+			</view>
+			<!-- 歌曲列表 -->
+			<view class="slist">
+				<view class="slist_a">
+					<!--  -->
+					<view class="slist_b">
+						<view class="slist_d">
+							<image class="slist_c" src="../../images/tabbar/play.png"></image>
+							播放全部
+							<text>({{arr4.length}})</text>
+						</view>
+						<view class="slist_e">
+							<image class="slist_f" src="../../images/tabbar/list.png"></image>
+							多选
+						</view>
+					</view>
+					<!-- 歌曲 -->
+					<view class="list" wx:for="{{arr4}}" :key="index">
+						<view class="list_a">
+							<view>
+								<image class="list_b" src="{{item.album.blurPicUrl}}"></image>
+							</view>
+							<view>
+								<view>{{item.name}}</view>
+								<view class="list_c">{{item.artists[0].name}}</view>
+							</view>
+						</view>
+						<view class="list_d">
+							<image class="list_e" src="../../images/tabbar/more.png"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+  </van-tab>
+	<van-tab title="日本">
+        <view class="allsong">
+			<!-- 顶部图片 -->
+			<view class="song">
+				<image class="song_a" src="../../images/tabbar/riben.jpg"></image>
+				<view class="song_b">
+					<view class="song_c">日本</view>
+					<view class="song_d">Japanese Music</view>
+				</view>
+			</view>
+			<!-- 歌曲列表 -->
+			<view class="slist">
+				<view class="slist_a">
+					<!--  -->
+					<view class="slist_b">
+						<view class="slist_d">
+							<image class="slist_c" src="../../images/tabbar/play.png"></image>
+							播放全部
+							<text>({{arr5.length}})</text>
+						</view>
+						<view class="slist_e">
+							<image class="slist_f" src="../../images/tabbar/list.png"></image>
+							多选
+						</view>
+					</view>
+					<!-- 歌曲 -->
+					<view class="list" wx:for="{{arr5}}" :key="index">
+						<view class="list_a">
+							<view>
+								<image class="list_b" src="{{item.album.blurPicUrl}}"></image>
+							</view>
+							<view>
+								<view>{{item.name}}</view>
+								<view class="list_c">{{item.artists[0].name}}</view>
+							</view>
+						</view>
+						<view class="list_d">
+							<image class="list_e" src="../../images/tabbar/more.png"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+  </van-tab>
+</van-tabs>

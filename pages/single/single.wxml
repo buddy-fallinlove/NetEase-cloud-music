@@ -1,0 +1,110 @@
+	<view>
+		<view class="top">
+			<van-search placeholder="{{default.keywords}}" value="{{keywords}}" class="ipt" show-action bind:search="onSearch" bind:cancel="onCancel" bind:change="change" />
+		</view>
+	</view>
+	<view wx:if="{{flag===0}}">
+		<!-- 公共导航选项 -->
+		<scroll-view scroll-x>
+			<view class="list-box">
+				<view wx:for="{{navs}}" wx:key="index" bindtap="click" data-item="{{item}}" data-index="{{index}}">
+					<view class="smp {{active===index? 'change':''}}">{{item.name}}</view>
+				</view>
+			</view>
+		</scroll-view>
+		<!-- 单曲 -->
+		<view wx:if="{{active===0}}">
+			<view class="box">
+				<image src="../../images/tabbar/播放.png" class="xiaotu"></image>
+				<view>播放全部</view>
+			</view>
+			<view wx:for="{{list}}" wx:key="idex"  bindtap="read" data-item="{{item}}">
+				<view class="box2">
+					<view class="word1">{{index+1}}</view>
+					<view>
+						<view class="title">{{item.name}} {{item.alia[0]}}</view>
+						<view class="word2">{{item.artists[0].name}} - {{item.name}}</view>
+					</view>
+					<van-icon name="play-circle-o" class="icon" />
+				</view>
+			</view>
+		</view>
+		<!-- 专辑 -->
+		<view wx:if="{{active===1}}">
+			<view wx:for="{{list}}" wx:key="index" bindtap="Album" data-item="{{item}}">
+				<view class="box2-s">
+					<view class="word1">{{index+1}}</view>
+					<image class="inas" src="{{item.picUrl}}"></image>
+					<view class="til">{{item.name}}</view>
+					<view class="title1">{{item.artist.name}}<text class="shijian">{{item.publishTime}}</text></view>
+				</view>
+			</view>
+		</view>
+		<!-- 歌手 -->
+		<view wx:if="{{active===2}}">
+			<view wx:for="{{list}}" wx:key="index" bindtap="singer" data-item="{{item}}">
+				<view class="box2-s">
+					<image src="{{item.img1v1Url}}" class="inas"></image>
+					<view class="title">{{item.name}}</view>
+				</view>
+			</view>
+		</view>
+	<!-- 歌单列表 -->
+<view wx:if="{{active===3}}">
+	<view wx:for="{{list}}" wx:key="index" class="box2-ss"  bindtap="sheet" data-item="{{item}}">
+		<image src="{{item.coverImgUrl}}" class="bg-s"></image>
+		<view class="m-t1">
+			<view class="toptitle">{{item.name}}</view>
+			<view class="d-f">
+				<view class="zhi">{{item.trackCount}}首音乐</view>
+				<view class="zhi">{{item.creator.nickname}}</view>
+				<view class="zhi">播放{{item.playCount}}次</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 用户列表 -->
+<view wx:if="{{active===4}}">
+	<view wx:for="{{list}}" wx:key="index" class="box2-ss"  bindtap="user" data-item="{{item}}">
+		<image class="bg-s" src="{{item.avatarUrl}}"></image>
+		<view class="r-g-b">
+			<view class="title">{{item.nickname}}</view>
+			<view class="zhi">{{item.signature}}</view>
+		</view>
+		<view class="guanzhu">+关注</view>
+	</view>
+</view>
+<!-- 视频 -->
+<view wx:if="{{active===5}}">
+	<view class="big-box4" wx:for="{{list}}" wx:key="index" bindtap="video" data-item="{{item}}">
+		<view class="left-box">
+			<image class="tu4" src="{{item.coverUrl}}"></image>
+					<view class="count">{{item.playTime}}万</view>
+		</view>
+		<view class="cen-box">
+			<view class="mv">MV</view>
+			<view class="time">{{item.durationms}}</view>
+		</view>
+		<view class="rig-box">
+			<view class="right-title">{{item.title}}</view>
+			<view class="by-singer">by:{{item.creator[0].userName}}</view>
+		</view>
+	</view>
+</view>
+<!-- 电台列表 -->
+<view wx:if="{{active===6}}">
+	<view class="big-box4" wx:for="{{list}}" wx:key="index" bindtap="station" data-item="{{item}}">
+		<image class="bg-s" src="{{item.picUrl}}"></image>
+		<view class="r-g-b">
+			<view class="title">{{item.name}}</view>
+			<view class="zhi">{{item.dj.nickname}}</view>
+		</view>
+	</view>
+</view>
+	</view>
+	<view wx:if="{{flag === 1}}">
+		<view class="pan">你搜索的是"{{value}}"</view>
+		<view wx:for="{{app}}" wx:key="index"  bindtap="sert" data-item="{{item}}">
+			<view class="pang">{{item.keyword}}</view>
+		</view>
+	</view>

@@ -1,0 +1,23 @@
+<view>
+<view class="big-box">
+<view class="{{num === 1 ? 'bt11':'bt1'}} "bindtap="dianji1">新碟</view>
+<view class="{{num === 2 ?'bt11':'bt1'}} "bindtap="dianji2">新歌</view>
+<view class="bt2">更多新碟</view>
+</view>
+<view class="big-box2" wx:if="{{num === 1}}">
+<view wx:for="{{newest}}" wx:key="index" class="small-box" bindtap="albums" data-item="{{item}}" data-index="{{index}}">
+<image class="beijing" src="{{item.picUrl}}"></image>
+<view class="title">{{item.name}}</view>
+</view>
+</view>
+
+
+<view class="big-box2" wx:else>
+<view wx:for="{{albums}}" wx:key="index" class="small-box" bindtap="newest" data-item="{{item}}" data-index="{{index}}">
+<image class="beijing" src="{{item.picUrl}}"></image>
+<view class="title">{{item.name}}</view>
+</view>
+</view>
+
+
+</view>

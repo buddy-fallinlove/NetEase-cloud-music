@@ -1,0 +1,129 @@
+page{
+  height: 100%;
+}
+.wai{
+  font-size: 32rpx;
+  color: white;
+  height: 100%;
+}
+.top{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.top:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: inherit;
+  filter: blur(30rpx);
+  z-index: 0;
+}
+.top_a{
+  width: 94%;
+  z-index: 3;
+}
+.top_b{
+  font-size: 36rpx;
+  font-weight: bold;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.top_c{
+  color:#f5f5f5 ;
+}
+.top_d{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 150rpx;
+  height: 400rpx;
+  width: 100%;
+  margin-bottom: 202rpx;
+}
+
+/* 头像旋转效果  */
+@keyframes headRotate{
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.top_e{
+  width: 400rpx;
+  height: 400rpx;
+  z-index: 2;
+  animation: headRotate 25s linear infinite
+}
+.top_f{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.top_g{
+  width: 260rpx;
+  height: 260rpx;
+  border-radius: 50%;
+  animation: headRotate 25s linear infinite
+}
+.top_h{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150rpx;
+}
+.top_h image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.top_i{
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+}
+.top_j{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.top_j image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.play{
+  width: 90rpx !important;
+  height: 90rpx !important;
+}
+.banxin{
+  z-index: 4;
+}
+.words{
+  height: 750rpx;
+  margin-top: 60rpx;
+  color: white;
+  line-height: 48rpx;
+  text-align: center;
+}
+.cc{
+  color: #C20C0C;
+  /* margin-top: 200px; */
+}
+.progress{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.progress_a{
+  width: 90%;
+}

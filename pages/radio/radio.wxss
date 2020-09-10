@@ -1,0 +1,115 @@
+.box{
+  display: flex;
+  justify-content: center;
+  margin: 40rpx;
+}
+.picture {
+  width: 700rpx;
+  height: 350rpx;
+}
+.center {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+.icon1 {
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  left: 30rpx;
+}
+.word1{
+  font-size: 14px;
+  margin-bottom: 10rpx;
+}
+.word2{
+  font-weight: 700;
+  font-size:40rpx;
+}
+.word4{
+  font-size: 24rpx;
+  margin-left: 19rpx;
+}
+.below{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+}
+.below1{
+  background: -webkit-linear-gradient(top,#FFF0AC,white );
+}
+.picture1{
+  width: 230rpx;
+  height: 230rpx;
+  border-radius: 16rpx;
+}
+.box2{
+  width: 230rpx;
+  margin-bottom: 30rpx;
+}
+.word3{
+  font-weight: 700;
+  font-size: 28rpx;
+}
+.box3{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15rpx;
+}
+button:not([size='mini']){
+  width: 200rpx !important;
+  height: 50rpx;
+  font-weight: 500;
+  font-size: 22rpx;
+  border-radius: 30rpx;
+}
+.picture2{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 6rpx;
+}
+.box1{
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.song{
+  width: 400rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.Y-axis{
+  width: 1rpx;
+  height: 20rpx;
+  border: 1px solid rgb(200, 200, 200);
+  background: rgb(200, 200, 200);
+  position: relative;
+  top: 10rpx;
+}
+.name{
+  font-size: 26rpx;
+}
+.picture3{
+  width: 50rpx;
+  height: 50rpx;
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360rpx;
+  height: 80rpx;
+  border: 1px solid rgb(247, 247, 247);
+}
+.down{
+  display: flex;
+  flex-wrap: wrap;
+}
+.woresa{
+  font-size:34rpx;
+}

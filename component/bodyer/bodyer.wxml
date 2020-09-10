@@ -1,0 +1,8 @@
+
+<view class="big-box">
+<view class="smbox" bindtap="tuijian">每日推荐<image class="tu" src="../../images/tabbar/每日推荐.png"></image> </view>
+<view class="smbox" bindtap="rank">歌单 <image class="tu" src="../../images/tabbar/歌单.png"></image></view>
+<view class="smbox" bindtap="category">排行榜 <image class="tu" src="../../images/tabbar/排行榜.png"></image></view>
+<view class="smbox" bindtap="radio">电台 <image class="tu" src="../../images/tabbar/电台.png"></image></view>
+<view class="smbox" bindtap="listen">直播 <image class="tu" src="../../images/tabbar/直播.png"></image></view>
+</view>

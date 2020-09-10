@@ -1,0 +1,7 @@
+ <view class="rotationChart">
+    <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}" circular="{{true}}">
+      <swiper-item wx:for="{{imageUrl}}" wx:key="index" class="swiper-item" >
+        <image class="swiper-image" src="{{item.imageUrl}}" mode="widthFix" />
+      </swiper-item>
+    </swiper>
+  </view>

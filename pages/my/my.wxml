@@ -1,0 +1,41 @@
+<view>
+	<view wx:if="{{username !==''}}">
+		<view class="account" style="display:flex">
+			<view style="display:flex">
+				<image src="{{arr.profile.avatarUrl}}" class="image"></image>
+				<view class="account1" style=" margin-right: 10px;">
+					<view>{{arr.profile.nickname}}</view>
+					<view class="account9">Lv:{{arr.level}}</view>
+				</view>
+			</view>
+			<view class="account2">签到</view>
+		</view>
+		<view style="display:flex;justify-content: space-around;margin-top: 20rpx;">
+			<view>
+				<view style=" margin-left: 10px;">{{arr.profile.follows}}</view>
+				<view class="word1">动态</view>
+			</view>
+			<view>
+				<view style=" margin-left: 10px;">{{arr.profile.follows}}</view>
+				<view class="word1">关注</view>
+			</view>
+			<view>
+				<view style="margin-left: 10px;">{{arr.profile.followeds}}</view>
+				<view class="word1">粉丝</view>
+			</view>
+			<view  bindtap="edit">
+				<image src="../../images/tabbar/修改.png" style=" margin-left: 10px;width:40rpx;height:40rpx"></image>
+				<view class="word1">编辑资料</view>
+			</view>
+		</view>
+		<view class="button">
+			<vant-button type="primary" size="normal" bindtap="button">退出登录</vant-button>
+		</view>
+	</view>
+	<view class="box" wx:else>
+		<view>
+			<view class="word1">您还没有登录哟</view>
+			<vant-button type="info" class="btn1" bindtap="denglu">立即登录</vant-button>
+		</view>
+	</view>
+</view>

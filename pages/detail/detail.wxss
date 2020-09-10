@@ -1,0 +1,70 @@
+.title{
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  height: 100rpx;
+  font-weight: 200;
+  color: rgb(0, 0, 0);
+  padding-left: 40rpx;
+  font-weight: 700;
+}
+.xian{
+  border-bottom: 1rpx solid rgb(210, 210, 210);
+  width: 100%;
+}
+.mar{
+  width: 100%;
+}
+.name{
+  color: red;
+}
+.box {
+  font-size: 28rpx;
+  width: 180rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.bgb {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80rpx;
+  margin-top: 30rpx;
+}
+
+.smb {
+  width: 30rpx;
+  height: 30rpx;
+  display: flex;
+  line-height: 30rpx;
+  text-align: center;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+}
+
+.every {
+  height: 120rpx;
+  display: flex;
+  margin-top: 40rpx;
+}
+
+.tu {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10px;
+  margin-left: 50rpx;
+}
+
+._name { 
+  line-height: 120rpx;
+  font-size: 28rpx;
+  margin-left: 50rpx;
+}
+.titleF{
+  width: 120rpx;
+  font-size: 10px;
+  text-align: center;
+  /* width: auto; */
+  margin-right: 50rpx;
+}

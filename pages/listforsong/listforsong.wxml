@@ -1,0 +1,57 @@
+<view>
+
+	<van-tabs active="{{ active }}">
+		<scroll-view scroll-x="{{true}}">
+			<van-tab title="推荐">
+				<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="rgb(149,149,149)" class="box">
+					<block wx:for="{{swp}}" wx:key="index">
+						<swiper-item>
+							<image src="{{item.coverImgUrl}}" class="picture"></image>
+						</swiper-item>
+					</block>
+				</swiper>
+				<view class="box3">
+					<view wx:for="{{arr2}}" wx:key="index"  data-item="{{item}}" bindtap="id">
+						<view class="box2">
+							<image src="{{item.coverImgUrl}}" class="picture1"></image>
+							<view class="word3">{{item.name}}</view>
+						</view>
+					</view>
+				</view>
+
+			</van-tab>
+			<van-tab title="官方">
+				<view class="box3">
+					<view wx:for="{{arr}}" wx:key="index"  data-item="{{item}}" bindtap="id">
+						<view class="box2">
+							<image src="{{item.picUrl}}" class="picture1"></image>
+							<view class="word3">{{item.name}}</view>
+						</view>
+					</view>
+				</view>
+			</van-tab>
+			<van-tab title="精品">
+				<view class="box3">
+					<view wx:for="{{arr1}}" wx:key="index"  data-item="{{item}}" bindtap="id">
+						<view class="box2">
+							<image src="{{item.coverImgUrl}}" class="picture1"></image>
+							<view class="word3">{{item.name}}</view>
+						</view>
+					</view>
+				</view>
+			</van-tab>
+			<van-tab title="华语">
+				<view class="box3">
+					<view wx:for="{{arr3}}" wx:key="index"  data-item="{{item}}" bindtap="id">
+						<view class="box2">
+							<image src="{{item.album.picUrl}}" class="picture1"></image>
+							<view class="word3">{{item.name}}</view>
+						</view>
+					</view>
+				</view>
+			</van-tab>
+		</scroll-view>
+	</van-tabs>
+
+
+</view>

@@ -1,0 +1,27 @@
+<view class="bodyer">
+<view wx:for="{{songs}}" wx:key="index">
+<view wx:for="{{item.ar}}" wx:key="index" wx:for-item="item1" wx:for-index="index1" class="_name">
+<view>{{item1.name}}</view>
+</view>
+<image class="yuantu {{num===2 ? 'music_on':''}}" src="{{item.al.picUrl}}"></image>
+</view>
+
+<!-- 进度条 -->
+<view></view>
+<!-- 播放选项 -->
+<view class="bfxx">
+<image bindtap="huan1" wx:if="{{active===1}}" class="bftb" src="../../images/tabbar/单曲循环.png"></image>
+<image bindtap="huan2" wx:if="{{active===2}}" class="bftb" src="../../images/tabbar/随机播放.png"></image>
+<image bindtap="huan3" wx:if="{{active===3}}" class="bftb" src="../../images/tabbar/顺序播放.png"></image>
+<image class="bftb" src="../../images/tabbar/上一首.png"></image>
+<image bindtap="bofang" wx:if="{{num===1}}" class="bftb" src="../../images/tabbar/播放.png" ></image>
+<image bindtap="zanting" wx:if="{{num===2}}" class="bftb" src="../../images/tabbar/暂停.png" ></image>
+<image class="bftb" src="../../images/tabbar/下一首.png"></image>
+<image bindtap="shoucang" wx:if="{{flag===1}}" class="bftb" src="../../images/tabbar/搜藏.png"></image>
+<image bindtap="quxiaoshoucang" wx:if="{{flag===2}}" class="bftb" src="../../images/tabbar/已收藏.png"></image>
+</view>
+
+
+
+
+</view>

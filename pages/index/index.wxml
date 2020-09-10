@@ -1,0 +1,33 @@
+<view class="d-f j-c-s-a a-l-c m-t1">
+	<view class="box">音乐馆</view>
+	<view class="box1" bindtap="login">
+		<view>
+			<image src="../../images/tabbar/搜索.png" style="width:20px;height:20px;"></image>
+		</view>
+		<view class="box2">搜索</view>
+	</view>
+	<view>
+		<image src="../../images/tabbar/音乐.png" style="width:30px;height:30px;"></image>
+	</view>
+</view>
+<view>
+	<rotation imageUrl="{{imageUrl}}"></rotation>
+</view>
+<view class="m-t1">
+	<ification></ification>
+</view>
+<view>
+	<recommendation arr="{{arr}}"></recommendation>
+</view>
+<view>
+	<disc arr1="{{arr1}}" arr2="{{arr2}}"></disc>
+</view>
+<view>
+<song arr3="{{arr3}}"></song>
+</view>
+<view>
+<station arr4="{{arr4}}"></station>
+</view>
+<view>
+<program arr5="{{arr5}}"></program>
+</view>

@@ -1,0 +1,16 @@
+
+<view class="bodyer">
+<view class="bt">
+<view class="bt1">音乐馆</view>
+<image src="../../images/tabbar/放大镜.png" class="bt2"></image>
+<input placeholder="搜索" class="bt3" bindtap="search"></input>
+<image src="../../images/tabbar/音符.png" class="bt4" bindtap="ting"></image>
+</view>
+
+
+
+
+
+
+
+</view>

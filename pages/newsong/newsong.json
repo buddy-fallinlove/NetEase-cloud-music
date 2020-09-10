@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-tab": "../../lib/vant/tab/index",
+    "van-tabs": "../../lib/vant/tabs/index"
+  },
+  "navigationBarTitleText":"最新音乐"
+}

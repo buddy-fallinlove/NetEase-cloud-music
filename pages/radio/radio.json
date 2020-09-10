@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-button": "../../lib/vant/button",
+    "van-icon": "../../lib/vant/icon"
+  },
+  "navigationBarTitleText": "主播电台"
+}

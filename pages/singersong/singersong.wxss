@@ -1,0 +1,44 @@
+/* pages/singersong/singersong.wxss */
+.lid{
+  background: rgb(233, 237, 237);
+  width: 100%;
+  display: flex;
+}
+.ert{
+  font-size: 18px;
+  margin-top: 24px;
+  color: #000;
+}
+.box{
+  width: 276rpx;
+  height: 276rpx;
+  padding: 20px;
+  border-radius: 100px;
+}
+.box1 {
+  display: flex;
+  margin: 20rpx 0;
+}
+.number{
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  font-size: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+.sing {
+  font-size: 29rpx;
+}
+.name {
+  color: rgb(200, 200, 200);
+  font-size: 26rpx;
+}
+.box2 {
+  width: 550rpx;
+
+}
+.picture2{
+  width: 50rpx;
+  height: 50rpx;
+}

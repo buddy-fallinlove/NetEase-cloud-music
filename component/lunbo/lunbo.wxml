@@ -1,0 +1,14 @@
+<view class="lunbotu">
+ <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
+ interval="{{interval}}">
+ <block wx:for="{{imageUrl}}" wx:key="index" class="slide">
+ <swiper-item>
+ <image src="{{item.imageUrl}}" class="slide-image"></image>
+ </swiper-item>
+ 
+ 
+ </block>
+ 
+ </swiper>
+
+</view>

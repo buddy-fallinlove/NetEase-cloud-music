@@ -1,0 +1,29 @@
+<!-- 顶部导航 -->
+<view class="xian">
+	<scroll-view scroll-x>
+<view class="title">
+		<view wx:for="{{singerlist}}" wx:key="index" data-item="{{item}}" data-index="{{index}}" class="mar {{name === index?'name':''}}" bindtap="dianji1">
+			<view class="box">{{item.name}}</view>
+		</view>
+</view>
+	</scroll-view>
+</view>
+<!-- 姓名首字母搜搜索 -->
+<view class="bgb" wx:if="{{flag===true}}">
+<scroll-view scroll-x>
+<view class="d-f">
+	<view class="smb" wx:for="{{zimu}}" wx:key="index" data-item="{{item}}" data-index="{{index}}"  class="titleF {{namet === index?'name':''}}" bindtap="dianji2">
+		<view>{{item.name}}</view>
+	</view>
+  </view>
+  	</scroll-view>
+</view>
+
+
+<!-- 歌手列表 -->
+<view>
+	<view class="every" wx:for="{{list}}" wx:key="index" data-item="{{item}}" bindtap="song">
+			<image class="tu" src="{{item.picUrl}}"></image>
+		<view class="_name">{{item.name}}</view>
+	</view>
+</view>

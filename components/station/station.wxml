@@ -1,0 +1,16 @@
+<view class="obj">
+	<view class="obj1">推荐电台</view>
+	<view></view>
+  	<view class="obj2" bindtap="radio">电台广场</view>
+</view>
+<view class="box">
+	<view wx:for="{{arr4}}" wx:key="index">
+		<view>
+			<image src="{{item.picUrl}}" class="box1"></image>
+			<view>
+				<view class="box2">{{item.name}}</view>
+			</view>
+		</view>
+
+	</view>
+</view>

@@ -1,0 +1,16 @@
+<view class="obj">
+	<view class="obj1">推荐歌单</view>
+	<view></view>
+  	<view class="obj2" bindtap="sing">歌单广场</view>
+</view>
+<view class="box">
+	<view wx:for="{{arr}}" wx:key="index" data-item="{{item}}" bindtap="id">
+		<view>
+			<image src="{{item.picUrl}}" class="box1"></image>
+			<view>
+				<view class="box2">{{item.name}}</view>
+			</view>
+		</view>
+
+	</view>
+</view>

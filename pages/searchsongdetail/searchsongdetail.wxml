@@ -1,0 +1,107 @@
+<view wx:if="{{type==='10'}}">
+<view class="header">
+<image class="beijing" src="{{album.picUrl}}"></image>
+<view class="bt">
+<view class="bt1">专辑：{{album.name}}</view>
+<view class="bt2">歌手：{{album.company}}</view>
+<view class="bt3">发行时间:{{album.publishTime}}</view>
+<view class="bt4">简介：{{album.description}}</view>
+</view>
+</view>
+</view>
+<!-- ------------------- -->
+<view wx:if="{{type==='100'}}">
+<view class="header">
+<image class="beijing" src="{{album.picUrl}}"></image>
+<view class="bt">
+<view class="bt2">歌手：{{album.name}}</view>
+<view class="bt3">发行时间:{{album.publishTime}}</view>
+<view class="bt4">简介：{{album.briefDesc}}</view>
+</view>
+</view>
+</view>
+<!-- ---------------------- -->
+<view wx:if="{{type==='1000'}}">
+<view class="header">
+<image class="beijing" src="{{album.coverImgUrl}}"></image>
+<view class="bt">
+<view class="bt2">专辑：{{album.name}}</view>
+<view class="bt3">更新时间:{{album.updateTime}}</view>
+<view class="bt4">简介：{{album.description}}</view>
+</view>
+</view>
+
+</view>
+<!-- ------------------ -->
+<view wx:if="{{type==='1002'}}">
+<view class="header">
+<image class="beijing" src="{{album.backgroundUrl}}"></image>
+<view class="bt">
+<view class="b-t1">{{album.nickname}}</view>
+<view class="sm-til">
+<view class="b-t2">关注：{{album.follows}}</view>
+<view class="b-t3">粉丝：{{album.followeds}}</view>
+<view class="b-t4">{{album.birthday}}</view>
+</view>
+</view>
+</view>
+
+<view class="bf"><image class="tubiao" src="../../images/tabbar/播放.png"></image>播放全部（共{{arr.length}}首）</view>
+<view wx:for="{{arr}}" wx:key="index" class="bottom" bindtap="detail" data-item="{{item}}">
+<view class="index">{{index+1}}</view>
+<image class="sm-beijing" src="{{item.coverImgUrl}}"></image>
+<view class="smbox">
+<view>{{item.name}}</view>
+<view class="smbt">{{item.trackCount}}首，播放{{item.playCount}}</view>
+</view>
+<image class="tubiao" src="../../images/tabbar/播放.png"></image>
+</view>
+
+
+</view>
+<!-- ------------------------- -->
+<view wx:if="{{type==='1014'}}">
+<view>无结果</view>
+</view>
+<!-- ------------- -->
+<view wx:if="{{type==='1009'}}">
+<view class="header">
+<image class="beijing" src="{{album.picUrl}}"></image>
+<view class="d-t-bt">{{album.name}}</view>
+</view>
+<view wx:for="{{arr}}" wx:key="index" class="bottom" bindtap="bofang" data-item="{{item}}">
+<view class="index">{{index+1}}</view>
+<view class="smbox">
+<view>{{item.name}}</view>
+<view class="singername">
+<view>{{item.createTime}}</view>
+<view class="s-j">{{item.listenerCount}}</view>
+<view class="s-j">{{item.duration}}</view>
+</view>
+
+
+</view>
+<image class="tubiao" src="../../images/tabbar/播放.png"></image>
+</view>
+
+
+
+</view>
+
+
+<!-- ------------------- -->
+<view wx:if="{{type!=='1002'&&type!=='1014'&&type!=='1009'}}">
+<view class="bf" bindtap="bofangall"><image class="tubiao" src="../../images/tabbar/播放.png"></image>播放全部（共{{arr.length}}首）</view>
+<view wx:for="{{arr}}" wx:key="index" class="bottom" bindtap="bofang" data-item="{{item}}">
+<view class="index">{{index+1}}</view>
+<view class="smbox">
+
+<view >{{item.name}}</view>
+<view class="singername">
+<view wx:for="{{item.ar}}" wx:key="index" wx:for-item="item1" wx:for-index="index1">{{item1.name}}</view>
+<view>-{{item.al.name}}</view>
+</view>
+</view>
+<image src="../../images/tabbar/播放.png" class="tubiao"></image>
+</view>
+</view>
